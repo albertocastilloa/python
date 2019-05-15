@@ -9,3 +9,12 @@ with open('logger.csv', 'w') as logger_csv:
     log_write.writeheader()
     for item in access_log:
         log_write.writerow(item)
+
+
+with open('compromised_users.txt', 'w') as compromised_user_file:
+  fields = ['username']
+  compromise_write = csv.DictWriter(compromised_user_file, fieldnames=fields)
+  
+  compromise_write.writeheader()
+  for items in compromised_users:
+    compromise_write.writerow(items)

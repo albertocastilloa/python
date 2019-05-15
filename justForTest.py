@@ -1,15 +1,11 @@
-# Write your count_first_letter function here:
-def count_first_letter(names):
-  letters = {}
-  for i in names.keys():
-    if i[0] not in letters:
-      letters[i[0]] = len(names[i])
-    else:
-      letters[i[0]] += len(names[i])
-  return letters
+import numpy as np
 
-# Uncomment these function calls to test your  function:
-print(count_first_letter({"Stark": ["Ned", "Robb", "Sansa"], "Snow" : ["Jon"], "Lannister": ["Jaime", "Cersei", "Tywin"]}))
-# should print {"S": 4, "L": 3}
-print(count_first_letter({"Stark": ["Ned", "Robb", "Sansa"], "Snow" : ["Jon"], "Sannister": ["Jaime", "Cersei", "Tywin"]}))
-# should print {"S": 7}
+b_mean = 6.7
+b_std = 0.7
+x_randoms = 10
+
+#b_data = np.random.normal(b_mean, b_std, x_randoms)
+
+f_data = np.random.normal(7.7, 0.3, size=10)
+#print(b_data)
+print(f_data)
