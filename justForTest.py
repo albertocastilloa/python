@@ -1,11 +1,15 @@
-import numpy as np
+def create_x(t, w, n, d):
+    return [t*x + w*n for x in range(d)]
 
-b_mean = 6.7
-b_std = 0.7
-x_randoms = 10
+school_a_x = create_x(2, 0.8, 1, 5)
+school_b_x = create_x(2, 0.8, 2, 5)
 
-#b_data = np.random.normal(b_mean, b_std, x_randoms)
+xxxx = zip(school_a_x, school_b_x)
+print(xxxx)
+middle_x =  [ (a + b) / 2.0 for a, b in zip(school_a_x, school_b_x)]
 
-f_data = np.random.normal(7.7, 0.3, size=10)
-#print(b_data)
-print(f_data)
+print(school_a_x)
+print
+print(school_b_x)
+print
+print(middle_x)
