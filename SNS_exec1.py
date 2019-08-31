@@ -18,3 +18,6 @@ ax.set_xticks(range(len(df)))
 ax.set_xticklabels(df.Gender)
 plt.xlabel("Gender")
 plt.ylabel("Mean Satisfaction")"""
+
+
+    
