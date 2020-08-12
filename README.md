@@ -1,2 +1,2 @@
 # python
-Bunch of good functions to python started programmers
+Bunch of good functions for python started programmers
